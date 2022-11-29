@@ -18,6 +18,6 @@ import Template from './Template'
             <MDXRemote {...mdx} components={components}/>
         </Template>);
 
-        fs.writeFileSync(`./emails/${directory.name}/email.html`, html)
+        fs.writeFileSync(`./public/${directory.name}.html`, html)
     }
 })()
