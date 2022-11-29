@@ -1,0 +1,33 @@
+{
+  "name": "email-writer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "generate": "node -r esbuild-register src/main.tsx --external:periscopic"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "esbuild": "^0.15.15",
+    "esbuild-register": "^3.4.1"
+  },
+  "dependencies": {
+    "@types/mjml-react": "^2.0.6",
+    "@types/nodemailer": "^6.4.6",
+    "estree-util-build-jsx": "2.0.0",
+    "estree-walker": "2.0.2",
+    "fs": "^0.0.1-security",
+    "mjml": "^4.13.0",
+    "mjml-react": "^2.0.8",
+    "next-mdx-remote": "^4.2.0",
+    "nodemailer": "^6.8.0",
+    "periscopic": "2.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "resolutions": {
+    "estree-util-build-jsx": "2.0.0",
+    "estree-walker": "2.0.2",
+    "periscopic": "2.0.3"
+  }
+}
