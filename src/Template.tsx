@@ -1,5 +1,5 @@
-import React from 'react'
-import { render, Mjml, MjmlHead, MjmlTitle, MjmlPreview, MjmlBody, MjmlSection, MjmlColumn, MjmlImage, MjmlButton, MjmlText, MjmlSpacer, MjmlFont, MjmlAttributes, MjmlAll } from 'mjml-react'
+import * as React from 'react'
+import {  Mjml, MjmlHead, MjmlBody, MjmlSection, MjmlColumn, MjmlImage, MjmlText, MjmlSpacer, MjmlFont, MjmlAttributes, MjmlAll } from 'mjml-react'
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return <Mjml>
@@ -30,7 +30,7 @@ function Body({ children }: { children: React.ReactNode }) {
 function Header() {
   return <MjmlSection backgroundColor="white" padding={32}>
     <MjmlColumn>
-      <MjmlImage src='https://www.upredict.co.uk/static/media/upredictlogo.9afc988f6168b30256a0165cfc5e6666.svg' align='center' width={400} />
+      <MjmlImage src='https://upredict.github.io/mailer/logo.png' align='center' width={400} />
     </MjmlColumn>
   </MjmlSection>
 }
@@ -52,7 +52,7 @@ function Gap() {
 function Footer() {
   return <MjmlSection backgroundColor="#333333" fullWidth>
     <MjmlColumn>
-      <MjmlText color="#dddddd" paddingTop={32} paddingBottom={64} align="center">&copy; uPredict Ltd. 2022</MjmlText>
+      <MjmlText color="#dddddd" paddingTop={32} paddingBottom={64} align="center">&copy; uPredict Ltd. 2023</MjmlText>
     </MjmlColumn>
   </MjmlSection>
 }

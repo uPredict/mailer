@@ -1,3 +1,1 @@
-export default emailAddresses = [
-  "cmdrkeem@gmail.com"
-]
+export default []
